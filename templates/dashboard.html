@@ -15,7 +15,7 @@
                         <div class="stat-content">
                             <div class="text-left dib">
                                 <div class="stat-text"><span class="count" style="color: white">{{ order }}</span></div>
-                                <div class="stat-heading" style="color: white">Order</div>
+                                <div class="stat-heading" style="color: white">Pedido</div>
                             </div>
                         </div>
                     </div>
@@ -33,7 +33,7 @@
                         <div class="stat-content" >
                             <div class="text-left dib">
                                 <div class="stat-text" style="color: white"><span class="count">{{ product }}</span></div>
-                                <div class="stat-heading" style="color: white">Product</div>
+                                <div class="stat-heading" style="color: white">Producto</div>
                             </div>
                         </div>
                     </div>
@@ -51,7 +51,7 @@
                         <div class="stat-content">
                             <div class="text-left dib">
                                 <div class="stat-text"><span class="count" style="color: white">{{ supplier }}</span></div>
-                                <div class="stat-heading" style="color: white">Supplier</div>
+                                <div class="stat-heading" style="color: white">Proveedor</div>
                             </div>
                         </div>
                     </div>
@@ -69,7 +69,7 @@
                         <div class="stat-content">
                             <div class="text-left dib">
                                 <div class="stat-text"><span class="count" style="color: white">{{ buyer }}</span></div>
-                                <div class="stat-heading" style="color: white">Buyer</div>
+                                <div class="stat-heading" style="color: white">Comprador</div>
                             </div>
                         </div>
                     </div>
@@ -87,7 +87,7 @@
             <div class="col-xl-12">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="box-title">Orders </h4>
+                        <h4 class="box-title">Pedidos </h4>
                     </div>
                     <div class="card-body--">
                         <div class="table-stats order-table ov-h">
@@ -95,14 +95,14 @@
                                 <thead>
                                     <tr>
                                         <th class="serial">#</th>
-                                        <th>Supplier</th>
-                                        <th>Product</th>
-                                        <th>Design</th>
+                                        <th>Proveedor</th>
+                                        <th>Producto</th>
+                                        <th>Diseño</th>
                                         <th>Color</th>
-                                        <th>Buyer</th>
-                                        <th>Season</th>
-                                        <th>Category</th>
-                                        <th>Date</th>
+                                        <th>Comprador</th>
+                                        <th>Temporada</th>
+                                        <th>Categoría</th>
+                                        <th>Fecha de creación</th>
                                         <th>Status</th>
                                     </tr>
                                 </thead>
@@ -137,7 +137,7 @@
                                     </tr>
                                     {% endfor %}
                                     {% else %}
-                                        <tr><td>No Order Data</td></tr>
+                                        <tr><td>No hay datos</td></tr>
                                     {% endif %}
                                 </tbody>
                             </table>

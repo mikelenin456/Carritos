@@ -1,6 +1,6 @@
 {% extends 'base/base.html' %}
 
-{% block title %}Season List{% endblock title %}
+{% block title %}Lista de Temporadas{% endblock title %}
 
 {% block breadcrumbs %}
 <div class="breadcrumbs">
@@ -18,7 +18,7 @@
                     <div class="page-title">
                         <ol class="breadcrumb text-right">
                             <li><a href="#">Dashboard</a></li>
-                            <li><a href="#">Season</a></li>
+                            <li><a href="#">Temporada</a></li>
                             <li class="active">List</li>
                         </ol>
                     </div>
@@ -34,7 +34,7 @@
     <div class="col-xl-12">
         <div class="card">
             <div class="card-body">
-                <h4 class="box-title">Season List </h4>
+                <h4 class="box-title">Lista de Temporadas</h4>
             </div>
             <div class="card-body--">
                 <div class="table-stats order-table ov-h">
@@ -42,9 +42,9 @@
                         <thead>
                             <tr>
                                 <th class="serial">#</th>
-                                <th>Name</th>
-                                <th>Description</th>
-                                <th>Date</th>
+                                <th>Nombre</th>
+                                <th>Descripción</th>
+                                <th>Fecha de creación</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -58,7 +58,7 @@
                             </tr>
                             {% endfor %}
                             {% else %}
-                                <tr><td>No Season Data</td></tr>
+                                <tr><td>No hay datos</td></tr>
                             {% endif %}
                         </tbody>
                     </table>

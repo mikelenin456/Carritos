@@ -1,6 +1,6 @@
 {% extends 'base/base.html' %}
 
-{% block title %}Delivery List{% endblock title %}
+{% block title %}Lista de Delivery{% endblock title %}
 
 {% block breadcrumbs %}
 <div class="breadcrumbs">
@@ -34,7 +34,7 @@
     <div class="col-xl-12">
         <div class="card">
             <div class="card-body">
-                <h4 class="box-title">Delivery List </h4>
+                <h4 class="box-title">Lista de Delivery</h4>
             </div>
             <div class="card-body--">
                 <div class="table-stats order-table ov-h">
@@ -42,9 +42,9 @@
                         <thead>
                             <tr>
                                 <th class="serial">#</th>
-                                <th>Order</th>
-                                <th>Courier Name</th>
-                                <th>Date</th>
+                                <th>Pedido</th>
+                                <th>Nombre del Courier</th>
+                                <th>Fecha de creación</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -58,7 +58,7 @@
                             </tr>
                             {% endfor %}
                             {% else %}
-                                <tr><td>No Delivery Data</td></tr>
+                                <tr><td>No hay datos</td></tr>
                             {% endif %}
                         </tbody>
                     </table>

@@ -1,6 +1,6 @@
 {% extends 'base/base.html' %}
 
-{% block title %}Order List{% endblock title %}
+{% block title %}Lista de Pedidos{% endblock title %}
 
 {% block breadcrumbs %}
 <div class="breadcrumbs">
@@ -18,7 +18,7 @@
                     <div class="page-title">
                         <ol class="breadcrumb text-right">
                             <li><a href="#">Dashboard</a></li>
-                            <li><a href="#">Order</a></li>
+                            <li><a href="#">Pedido</a></li>
                             <li class="active">List</li>
                         </ol>
                     </div>
@@ -34,7 +34,7 @@
     <div class="col-xl-12">
         <div class="card">
             <div class="card-body">
-                <h4 class="box-title">Order List </h4>
+                <h4 class="box-title">Lista de Pedidos</h4>
             </div>
             <div class="card-body--">
                 <div class="table-stats order-table ov-h">
@@ -42,14 +42,14 @@
                         <thead>
                             <tr>
                                 <th class="serial">#</th>
-                                <th>Supplier</th>
-                                <th>Product</th>
-                                <th>Design</th>
+                                <th>Proveedor</th>
+                                <th>Producto</th>
+                                <th>Diseño</th>
                                 <th>Color</th>
-                                <th>Buyer</th>
-                                <th>Season</th>
-                                <th>Category</th>
-                                <th>Date</th>
+                                <th>Comprador</th>
+                                <th>Temporada</th>
+                                <th>Categoría</th>
+                                <th>Fecha de creación</th>
                                 <th>Status</th>
                             </tr>
                         </thead>
@@ -84,7 +84,7 @@
                             </tr>
                             {% endfor %}
                             {% else %}
-                                <tr><td>No Order Data</td></tr>
+                                <tr><td>No hay datos</td></tr>
                             {% endif %}
                         </tbody>
                     </table>
