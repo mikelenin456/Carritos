@@ -15,4 +15,8 @@ class UserService:
         vendedor.groups.add(grupo)
         vendedor.save()
         return vendedor
-
+    
+    @classmethod
+    def delete_vendedor(cls, user: User):
+        user.groups.clear()
+        user.delete()

@@ -44,7 +44,9 @@
                                 <th class="serial">#</th>
                                 <th>Nombres</th>
                                 <th>Email</th>
+                                <th>Nombre de usuario</th>
                                 <th>Fecha de creación</th>
+                                <th>Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -54,7 +56,13 @@
                                 <td class="serial">{{ forloop.counter }}</td>
                                 <td>{{ vendedor.get_full_name }}</td>
                                 <td>{{ vendedor.email }}</td>
+                                <td>{{ vendedor.username }}</td>
                                 <td>{{ vendedor.date_joined }}</td>
+                                <td>
+                                    <a href="{% url 'delete-vendedor' pk=vendedor.pk %}">
+                                        <button class="btn btn-danger">eliminar</button>
+                                    </a>
+                                </td>
                             </tr>
                             {% endfor %}
                             {% else %}
