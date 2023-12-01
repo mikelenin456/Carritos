@@ -5,6 +5,7 @@
 {% block content %}
     <!-- Widgets  -->
     <div class="row">
+        {% if user.is_admin or user.is_vendedor %}
         <div class="col-lg-3 col-md-6">
             <div class="card">
                 <div class="card-body" style="background-color: blue">
@@ -22,7 +23,8 @@
                 </div>
             </div>
         </div>
-
+        {% endif %}
+        {% if user.is_admin %}
         <div class="col-lg-3 col-md-6">
             <div class="card">
                 <div class="card-body" style="background-color: green">
@@ -40,7 +42,7 @@
                 </div>
             </div>
         </div>
-
+   
         <div class="col-lg-3 col-md-6">
             <div class="card">
                 <div class="card-body" style="background-color: red">
@@ -76,6 +78,7 @@
                 </div>
             </div>
         </div>
+        {% endif %}
     </div>
     <!-- /Widgets -->
     

@@ -33,7 +33,6 @@ class VendedorCreateView(CreateView):
     model = User
     form_class = UserForm
     template_name = "users/add_vendedor.html"
-    # success_url = reverse_lazy("master:user-list")
     success_url = reverse_lazy("list-vendedor")
 
     def form_valid(self, form):
@@ -48,4 +47,3 @@ class VendedorListView(ListView):
     def get_queryset(self):
         return User.objects.filter(groups__name=Groups.VENDEDOR.value)
 
-    

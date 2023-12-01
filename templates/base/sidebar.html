@@ -6,7 +6,7 @@
                     <a href="{% url 'dashboard' %}"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
                 </li>
                 <li class="menu-title" style="color: white">Mi Tienda</li><!-- /.menu-title -->
-
+                {% if user.is_admin %}
                 <li class="menu-item-has-children dropdown" >
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-user"></i>Vendedor</a>
                     <ul class="sub-menu children dropdown-menu">
@@ -54,6 +54,8 @@
                         <li><i class="fa fa-eye" style="color: darkblue"></i><a href="{% url 'product-list' %}">Ver</a></li>
                     </ul>
                 </li> 
+                {% endif %}
+                {% if user.is_admin or user.is_vendedor %}
                 <li class="menu-item-has-children dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-shopping-cart"></i>Pedido</a>
                     <ul class="sub-menu children dropdown-menu">
@@ -69,6 +71,7 @@
                         <li><i class="fa fa-eye" style="color: darkblue"></i><a href="{% url 'delivery-list' %}">Ver</a></li>
                     </ul>
                 </li>
+                {% endif %}
             </ul>
         </div><!-- /.navbar-collapse -->
     </nav>
